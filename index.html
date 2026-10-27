@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#17110f">
+  <title>For Clifford ♡ | Happy Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <main>
+    <!-- ============ 1. LANDING / COUNTDOWN ============ -->
+    <section class="page landing" id="landing" aria-labelledby="main-title">
+      <aside class="side left" aria-hidden="true">
+        <img class="post" src="assets/img/deco-post-left.webp" alt="">
+        <figure class="pol p1"><img data-landing="photo1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="background:#d8cab8" alt=""><figcaption>naks igop <i class="hrt"></i></figcaption></figure>
+        <figure class="pol p2"><img data-landing="photo3" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="background:#d8cab8" alt=""><figcaption>cutiee naman</figcaption></figure>
+        <figure class="pol p3"><img data-landing="photo2" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="background:#d8cab8" alt=""><figcaption>mafia boss<i class="hrt"></i></figcaption></figure>
+      </aside>
+      <aside class="side right" aria-hidden="true">
+        <img class="post" src="assets/img/deco-post-right.webp" alt="">
+        <figure class="pol p1"><img data-landing="photo5" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="background:#d8cab8" alt=""><figcaption>saan ang tingin <i class="hrt"></i></figcaption></figure>
+        <figure class="pol p2"><img data-landing="photo6" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="background:#d8cab8" alt=""><figcaption>smileeee</figcaption></figure>
+      </aside>
+
+      <div class="hero">
+        <div class="eyebrow"><span></span>SPECIAL DAY<span></span></div>
+        <p class="script pretitle">To My Man</p>
+        <h1 id="main-title" class="script name">Clifford <i class="hrt"></i></h1>
+        <p class="birthday-label">HAPPY BIRTHDAY</p>
+        <p class="hero-note">Your special day is coming...<br>Not just another day, it's the day the world got a little brighter <i class="hrt"></i></p>
+        <div class="countdown" aria-label="Countdown to birthday">
+          <div><strong id="days">00</strong><span>DAYS</span></div>
+          <div><strong id="hours">00</strong><span>HOURS</span></div>
+          <div><strong id="minutes">00</strong><span>MINUTES</span></div>
+          <div><strong id="seconds">00</strong><span>SECONDS</span></div>
+        </div>
+        <button class="pill" id="lock-button" type="button">
+          <svg id="lock-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg>
+          <span id="lock-label">Locked — Open on your birthday</span> <i class="hrt"></i>
+        </button>
+      </div>
+      <div class="note-paper" id="soon-note" aria-hidden="true">
+        <span>Soon…<br>you'll be able to<br>unlock your<br>special gift <i class="hrt"></i></span>
+      </div>
+    </section>
+
+    <!-- ============ 2. GIFT PICKER ============ -->
+    <section class="page gifts hidden" id="gifts" aria-labelledby="gifts-title"></section>
+
+    <!-- ============ 3. MESSAGES ============ -->
+    <section class="page detail message hidden" id="message-page"></section>
+
+    <!-- ============ 4. FLOWERS ============ -->
+    <section class="page detail flowers hidden" id="flowers-page"></section>
+
+    <!-- ============ 5. CAKE ============ -->
+    <section class="page detail cake hidden" id="cake-page"></section>
+  </main>
+
+  <div class="modal-backdrop" id="lock-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-card">
+      <h2 id="modal-title">A little more patience, Cliffie <i class="hrt"></i></h2>
+      <p>Your special gifts unlock on November 26, 2026 at midnight (Philippines time). <i class="hrt"></i></p>
+      <button class="pill gold" id="okay-button" type="button">Okay</button>
+    </div>
+  </div>
+  <audio id="bgm" src="assets/audio/bestfriend.mp3" loop preload="auto"></audio>
+  <button class="music-btn muted" id="music-btn" type="button" aria-label="Play / pause music">
+    <svg class="on" viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg>
+    <svg class="off" viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/><path d="M3 3l18 18"/></svg>
+  </button>
+  <script src="content.enc.js" async></script>
+  <script src="landing.enc.js" async></script>
+  <script src="script.js"></script>
+</body>
+</html>
