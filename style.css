@@ -270,3 +270,8 @@ button{font:inherit;color:inherit}
 .music-btn.muted .on{display:none}.music-btn.muted .off{display:block}
 .music-btn.playing{animation:musicpulse 2.4s ease-in-out infinite}
 @keyframes musicpulse{50%{box-shadow:0 0 0 7px rgba(231,189,146,.16),0 6px 18px rgba(0,0,0,.45)}}
+
+/* phone: the gifts + cake pages no longer have polaroids, so don't reserve space for them */
+@media (max-aspect-ratio:1/1){
+  .gifts .side.right,.cake .side.right{display:none!important}
+}
